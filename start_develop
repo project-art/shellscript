@@ -1,0 +1,39 @@
+#!/bin/bash
+
+echo "-------------------------"
+echo "Script Extreme By Cosmo"
+echo "-------------------------"
+echo "Arquivo executado $0"
+
+#ping -c 4 www.globo.com
+
+<<comentario
+
+  Cometario em bloco
+  ls -l
+
+
+
+
+if [ "$UID" -ne 0 ]
+then
+echo "Voce deve ter poder de root par executar este scrip."
+exit
+fi
+
+
+if ping -c 3 www.globo.comsadfasdfasdf 2> /dev/null > /dev/null
+then
+echo "Site acessível"
+else
+echo "Site não está disponível"
+fi
+comentario
+
+
+if dpkg -l | grep chromium 2> /dev/null > /dev/null
+then
+echo "Chromium instalado no pc"
+else
+echo "Chromium não instalado no pc"
+fi
